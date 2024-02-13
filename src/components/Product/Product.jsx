@@ -1,25 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import { useMatch } from "react-router-dom";
-import Slider from "react-slick";
-import { SampleNextArrow, SamplePrevArrow } from "../home/components/Carousel";
 import { Alert, Box, Button, Snackbar, Typography } from "@mui/material";
 import { FavoriteBorder } from "@mui/icons-material";
 import { CartContext } from "../../App";
 
-const responsive = [
-  {
-    breakpoint: 650,
-    settings: {
-      dots: false,
-      infinite: false,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />,
-    },
-  },
-];
 const Product = () => {
   const cartContext = useContext(CartContext);
 
